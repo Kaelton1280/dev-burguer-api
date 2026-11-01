@@ -1,0 +1,8 @@
+
+const { resolve } = require('node:path'); // importa o resolve para trabalhar com caminhos de arquivos
+
+module.exports = {
+    'config': resolve(__dirname, 'src', 'config', 'database.cjs'), // define o caminho para o arquivo de configuração do sequelize
+    'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'), // define o caminho para o arquivo de migrações do sequelize
+    'models-path': resolve(__dirname, 'src', 'app', 'models'), // define o caminho para o arquivo de modelos do sequelize
+};

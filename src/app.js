@@ -5,6 +5,8 @@ const app = express(); // Cria uma instância do Express
 
 
 app.use(express.json()); // Adiciona o middleware para analisar o corpo das requisições como JSON
+app.use(express.urlencoded({ extended: true })); // Adiciona o middleware para analisar o corpo das requisições como URL-encoded
+
 app.use(routes); // Adiciona as rotas ao aplicativo Express
 
 
